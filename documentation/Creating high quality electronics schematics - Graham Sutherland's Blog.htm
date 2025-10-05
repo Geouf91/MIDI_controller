@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+  <meta charset="utf-8">
+  <meta name="generator" content="blogus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="keywords" content="electronics, technology">
+  <title>Creating high quality electronics schematics - Graham Sutherland's Blog</title>
+  
+  <link rel="stylesheet" href="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/blog.css"><style class="darkreader darkreader--cors" media="screen">:root {
+	--bg-colour: #191b22;
+	--bg-colour: oklch(22.32% 0.014 272.68);
+	--text-colour: #e0e0e0;
+	--text-colour: oklch(90.5% 0 0);
+	--link-colour: #eeeeee;
+	--link-colour: oklch(95% 0 0);
+	--link-hover-colour: #ffffff;
+	--link-hover-colour: oklch(100% 0 0);
+	--link-underline-colour: rgb(238 238 238 / .5);
+	--link-underline-colour: oklch(95% 0 0 / .5);
+	--tag-link-colour: #aeaeae;
+	--tag-link-colour: oklch(75% 0 0);
+	--tag-link-underline-colour: rgb(238 238 238 / .35);
+	--tag-link-underline-colour: oklch(95% 0 0 / .35);
+	--quote-colour: #bababe;
+	--quote-colour: oklch(79% 0.0056 286.27);
+	--hr-colour: #666666;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg-colour: #ffffff;
+		--bg-colour: oklch(100% 0 0);
+		--text-colour: #222222;
+		--text-colour: oklch(25.2% 0 0);
+		--link-colour: #181818;
+		--link-colour: oklch(20.9% 0 0);
+		--link-hover-colour: #000000;
+		--link-hover-colour: oklch(0 0 0);
+		--link-underline-colour: rgb(34 34 34 / .5);
+		--link-underline-colour: oklch(25.2% 0 0 / .5);
+		--tag-link-colour: #333333;
+		--tag-link-colour: oklch(32% 0 0);
+		--tag-link-underline-colour: rgb(34 34 34 / .35);
+		--tag-link-underline-colour: oklch(25.2% 0 0 / .35);
+		--quote-colour: #333333;
+		--quote-colour: oklch(32% 0 0);
+		--hr-colour: #1a1a1a;
+	}
+}
+
+img:note([alt]), input[alt=''] {
+	border: 2px solid red;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	color: var(--text-colour);
+	background-color: var(--bg-colour);
+}
+
+body {
+	margin: 0 auto;
+	max-width: 840px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	hyphens: auto;
+	overflow-wrap: break-word;
+	text-rendering: optimizeLegibility;
+	font-kerning: normal;
+	font-family: "Atkinson Hyperlegible Next", Inter, sans-serif;
+	font-size: 1.1rem;
+	letter-spacing: 0.02rem;
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 0.9rem;
+		padding: 12px;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+	}
+}
+
+@media print {
+	html {
+		background-color: white;
+	}
+
+	body {
+		background-color: transparent;
+		color: black;
+		font-size: 12pt;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3,
+	h4 {
+		page-break-after: avoid;
+	}
+}
+
+p,
+figure {
+	margin: 1rem 0;
+	text-align: justify;
+}
+
+p > math:only-child
+{
+	font-size: 1.2rem;
+}
+
+a {
+	color: var(--link-colour);
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: var(--link-underline-colour);
+}
+
+a:hover {
+	color: var(--link-hover-colour);
+	text-decoration-style: solid;
+}
+
+img {
+	max-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+	img.invert-when-dark {
+		filter: hue-rotate(180deg) invert();
+	}
+	img.invert-when-light {
+		filter: none;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	img.invert-when-dark {
+		filter: none;
+	}
+	img.invert-when-light {
+		filter: hue-rotate(180deg) invert();
+	}
+}
+
+svg {
+	height: auto;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+	margin-top: 1.4rem;
+}
+
+h5,
+h6 {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+h6 {
+	font-weight: normal;
+}
+
+h2 {
+	margin-top: 2.5rem;
+}
+
+ol,
+ul {
+	padding-left: 1.7rem;
+	margin-top: 1rem;
+}
+
+li>ol,
+li>ul {
+	margin-top: 0;
+}
+
+blockquote {
+	margin: 1rem 0 1rem 1.7rem;
+	padding-left: 1rem;
+	border-left: 2px solid #e6e6e6;
+	color: var(--quote-colour);
+}
+
+cite {
+	margin-left: 1rem;
+	font-size: 0.9rem;
+}
+
+code {
+	font-family: "Atkinson Hyperlegible Mono", Consolas, "Lucida Console", monospace;
+	letter-spacing: 0rem;
+	font-size: 85%;
+	margin: 0;
+	hyphens: manual;
+}
+
+pre {
+	margin: 1em 0;
+	overflow: auto;
+}
+
+pre code {
+	padding: 0;
+	overflow: visible;
+	overflow-wrap: normal;
+}
+
+.sourceCode {
+	background-color: transparent;
+	overflow: visible;
+}
+
+hr {
+	background-color: var(--hr-colour);
+	border: none;
+	height: 1px;
+	margin: 1rem 0;
+}
+
+table {
+	margin: 1rem 0;
+	border-collapse: collapse;
+	width: 100%;
+	overflow-x: auto;
+	display: block;
+	font-variant-numeric: lining-nums tabular-nums;
+}
+
+table caption {
+	margin-bottom: 0.75rem;
+}
+
+tbody {
+	margin-top: 0.5rem;
+	border-top: 1px solid #1a1a1a;
+	border-bottom: 1px solid #1a1a1a;
+}
+
+th {
+	border-top: 1px solid #1a1a1a;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+td {
+	padding: 0.125rem 0.5rem 0.25rem 0.5rem;
+}
+
+nav {
+	border-bottom: 1px white solid;
+}
+
+.blogTitle a {
+	text-decoration: none;
+}
+
+nav ol {
+	list-style-type: none;
+	margin-top: 0;
+	padding-left: 0;
+}
+
+nav ol li {
+	display: inline-block;
+}
+
+header {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+header h1 {
+	margin-bottom: 0.5rem;
+}
+
+aside {
+	margin-left: 1rem;
+}
+
+.postItem {
+	margin-bottom: 1.5rem;
+}
+
+.postItemTitle {
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	text-wrap: auto;
+}
+
+.postItemTitle:first-child() {
+	margin-top: 1rem;
+}
+
+.postItemSnippet {
+	margin: 0;
+	margin-top: 0.25rem;
+	color: var(--text-colour);
+	border-left: none;
+	padding-left: 0;
+	text-overflow: ellipsis;
+    display: -webkit-box;
+	max-height: 4rem;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.tagList {
+	list-style: none;
+	display: inline;
+}
+
+.tagList li {
+	display: inline;
+	padding-right: 0.5rem;
+}
+
+.tagList li a {
+	font-size: 0.9rem;
+	color: var(--tag-link-color);
+	text-decoration-color: var(--tag-link-underline-colour);
+}
+
+.date {
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+#TOC li {
+	list-style: none;
+}
+
+#TOC ul {
+	padding-left: 1.3rem;
+}
+
+#TOC>ul {
+	padding-left: 0;
+}
+
+#TOC a:not(:hover) {
+	text-decoration: none;
+}
+
+span.smallcaps {
+	font-variant: small-caps;
+}
+
+div.columns {
+	display: flex;
+	gap: min(4vw, 1.5rem);
+}
+
+div.column {
+	flex: auto;
+	overflow-x: auto;
+}
+
+div.hanging-indent {
+	margin-left: 1.5rem;
+	text-indent: -1.5rem;
+}
+
+
+ul.task-list[class] {
+	list-style: none;
+}
+
+ul.task-list li input[type="checkbox"] {
+	font-size: inherit;
+	width: 0.8rem;
+	margin: 0 0.8rem 0.2rem -1.6rem;
+	vertical-align: middle;
+}
+
+address {
+	display: inline;
+}
+
+footer {
+	text-align: justify;
+	margin-top: 4rem;
+	color: #888;
+}
+
+footer small {
+	font-size: 0.8rem;
+}
+
+footer a {
+	color: #888 !important;
+}
+
+footer hr {
+	border-top: 1px solid #999;
+}
+
+footer p {
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+
+pre>code.sourceCode {
+	white-space: pre;
+	position: relative;
+}
+
+pre>code.sourceCode>span {
+	line-height: 1.25;
+}
+
+pre>code.sourceCode>span:empty {
+	height: 1.2em;
+}
+
+.sourceCode {
+	overflow: visible;
+}
+
+code.sourceCode>span {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+div.sourceCode {
+	margin: 1em 0;
+}
+
+pre.sourceCode {
+	margin: 0;
+}
+
+@media screen {
+	div.sourceCode {
+		overflow: auto;
+	}
+}
+
+@media print {
+	pre>code.sourceCode {
+		white-space: pre-wrap;
+	}
+
+	pre>code.sourceCode>span {
+		display: inline-block;
+		text-indent: -5em;
+		padding-left: 5em;
+	}
+}
+
+pre.numberSource code {
+	counter-reset: source-line 0;
+}
+
+pre.numberSource code>span {
+	position: relative;
+	left: -4em;
+	counter-increment: source-line;
+}
+
+pre.numberSource code>span>a:first-child::before {
+	content: counter(source-line);
+	position: relative;
+	left: -1em;
+	text-align: right;
+	vertical-align: baseline;
+	border: none;
+	display: inline-block;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: 0 4px;
+	width: 4em;
+	color: #aaaaaa;
+}
+
+pre.numberSource {
+	margin-left: 3em;
+	border-left: 1px solid #aaaaaa;
+	padding-left: 4px;
+}
+
+div.sourceCode {padding: 0.2rem;}
+
+@media screen {
+	pre>code.sourceCode>span>a:first-child::before {
+		text-decoration: underline;
+	}
+}
+
+@media (prefers-color-scheme: light)
+{
+		
+	
+	code span.al {
+		color: #ff0000;
+		font-weight: bold;
+	}
+
+	
+	code span.an {
+		color: #60a0b0;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	
+	code span.at {
+		color: #7d9029;
+	}
+
+	
+	code span.bn {
+		color: #40a070;
+	}
+
+	
+	code span.bu {
+		color: #008000;
+	}
+
+	
+	code span.cf {
+		color: #007020;
+		font-weight: bold;
+	}
+
+	
+	code span.ch {
+		color: #4070a0;
+	}
+
+	
+	code span.cn {
+		color: #880000;
+	}
+
+	
+	code span.co {
+		color: #60a0b0;
+		font-style: italic;
+	}
+
+	
+	code span.cv {
+		color: #60a0b0;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	
+	code span.do {
+		color: #ba2121;
+		font-style: italic;
+	}
+
+	
+	code span.dt {
+		color: #902000;
+	}
+
+	
+	code span.dv {
+		color: #40a070;
+	}
+
+	
+	code span.er {
+		color: #ff0000;
+		font-weight: bold;
+	}
+
+	
+	code span.ex {}
+
+	
+	code span.fl {
+		color: #40a070;
+	}
+
+	
+	code span.fu {
+		color: #06287e;
+	}
+
+	
+	code span.im {
+		color: #008000;
+		font-weight: bold;
+	}
+
+	
+	code span.in {
+		color: #60a0b0;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	
+	code span.kw {
+		color: #007020;
+		font-weight: bold;
+	}
+
+	
+	code span.op {
+		color: #666666;
+	}
+
+	
+	code span.ot {
+		color: #007020;
+	}
+
+	
+	code span.pp {
+		color: #bc7a00;
+	}
+
+	
+	code span.sc {
+		color: #4070a0;
+	}
+
+	
+	code span.ss {
+		color: #bb6688;
+	}
+
+	
+	code span.st {
+		color: #4070a0;
+	}
+
+	
+	code span.va {
+		color: #19177c;
+	}
+
+	
+	code span.vs {
+		color: #4070a0;
+	}
+
+	
+	code span.wa {
+		color: #60a0b0;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+}
+
+
+@media (prefers-color-scheme: dark)
+{
+	.sourceCode {
+		background-color: #1b182a;
+		background-color: oklch(22.32% 0.033 291.63);
+		color: #ff7edb;
+	}
+	
+	
+	code span.al {
+		color: #ff0000;
+		font-weight: bold;
+	}
+
+	
+	code span.an {
+		color: #60a0b0;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	
+	code span.at {
+		color: #7d9029;
+	}
+
+	
+	code span.bn {
+		color: #40a070;
+	}
+
+	
+	code span.bu {
+		color: #AE81FF;
+	}
+
+	
+	code span.cf {
+		color: #007020;
+		font-weight: bold;
+	}
+
+	
+	code span.ch {
+		color: #ff8b39;
+	}
+
+	
+	code span.cn {
+		color: #f97e72;
+	}
+
+	
+	code span.co {
+		color: #848bbd;
+		font-style: italic;
+	}
+
+	
+	code span.cv {
+		color: #60a0b0;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	
+	code span.do {
+		color: #ba2121;
+		font-style: italic;
+	}
+
+	
+	code span.dt {
+		color: #fe4450;
+	}
+
+	
+	code span.dv {
+		color: #f97e72;
+	}
+
+	
+	code span.er {
+		color: #ff0000;
+		font-weight: bold;
+	}
+
+	
+	code span.ex {}
+
+	
+	code span.fl {
+		color: #f97e72;
+	}
+
+	
+	code span.fu {
+		color: #36f9f6;
+	}
+
+	
+	code span.im {
+		color: #F92672;
+		font-weight: bold;
+	}
+
+	
+	code span.in {
+		color: #60a0b0;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	
+	code span.kw {
+		color: #fede5d;
+		font-weight: bold;
+	}
+
+	
+	code span.op {
+		color: #fede5d;
+	}
+
+	
+	code span.ot {
+		color: #007020;
+	}
+
+	
+	code span.pp {
+		color: #bc7a00;
+	}
+
+	
+	code span.sc {
+		color: #36f9f6;
+	}
+
+	
+	code span.ss {
+		color: #f97e72;
+	}
+
+	
+	code span.st {
+		color: #ff8b39;
+	}
+
+	
+	code span.va {
+		color: #ff7edb;
+	}
+
+	
+	code span.vs {
+		color: #ff8b39;
+	}
+
+	
+	code span.wa {
+		color: #60a0b0;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+}</style><style class="darkreader darkreader--sync" media="screen"></style>
+<meta itemprop="datePublished" content="2025-08-10T03:17:00.0000000+01:00"><meta name="author" content="Graham Sutherland"><meta itemprop="license" content="https://creativecommons.org/licenses/by-nc-sa/4.0/"><meta name="color-scheme" content="dark light"><link rel="alternate" type="application/atom+xml" title="ATOM feed for Graham Sutherland's Blog" href="https://blog.poly.nomial.co.uk/feed.xml"><meta name="darkreader" content="5e86c336b78849e6a3f99f7cdde81881"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+select * {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+<body><nav><span class="blogTitle"><a href="https://blog.poly.nomial.co.uk/index.html">Graham Sutherland's Blog</a></span></nav><article><header id="title-block-header">
+<h1 class="title">Creating high quality electronics schematics</h1>
+<p class="date"><time datetime="2025-08-10T03:17:00.0000000+01:00" title="2025-08-10 03:17 (UTC+01:00)">2025-08-10</time></p>
+</header><main>
+
+
+<p>I’ve been reviewing schematics for people recently so I thought I’d write down some of the common tips I end up giving.</p>
+<p>These are in no particular order, they aren’t exhaustive, and they 
+are guidelines rather than rules. Hopefully they are useful to you.</p>
+<h2 id="stick-to-the-grid">1. Stick to the grid</h2>
+<p>Enable the grid in your EDA tool. Put your parts on the grid, draw your wires on the grid.</p>
+<p>Avoid making the grid too fine. The grid should ideally be set to the same size as the pin pitch on your symbols.</p>
+<h2 id="avoid-small-and-unnecessary-turns">2. Avoid small and unnecessary turns</h2>
+<p>Try to keep things in a straight line with no unnecessary offsets, zigzags, or loops. Align things nicely.</p>
+<h3 id="example">Example</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s01.png" alt="Schematic with two downward facing pins connected to resistors, one of which also has a series LED to ground. One wire has a small offset in it part way down, for no reason. The other wire goes unnecessarily far left and changes direction very close to another trace, making it hard to follow. The two issues are highlighted with blue arrows. The resistors are at different vertical positions, as are the grounds." class="invert-when-dark">
+
+</figure>
+<h3 id="suggested-alternative">Suggested alternative</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s02.png" alt="The same schematic, but now the wire with the small unnecessary turn runs straight down. The resistors are at the same vertical position, and the grounds are also vertically aligned." class="invert-when-dark">
+
+</figure>
+<h2 id="no-random-angles">3. No random angles</h2>
+<p>Route your wires in one of the four cardinal directions: up, down, left, or right.</p>
+<p>One exception is if you need to swap two wires that are running 
+parallel to each other. In that case you can use a pair of angled wires 
+to criss-cross them.</p>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s03.png" alt="Two examples of crossing parallel wires to reverse their order. The top routes the wires in 90 degree directions, resulting in a rather messy maze. The bottom just crosses the traces at an angle and is much neater." class="invert-when-dark">
+
+</figure>
+<h2 id="use-net-labels">4. Use net labels</h2>
+<p>Label your nets!</p>
+<p>This makes it easier to understand what the purpose of each net is, 
+and when you move on to doing PCB layout it’s a lot easier to recognise a
+ track with a net called <code>LDO_3V3_EN</code> than it is to recognise an autogenerated net name like <code>NetU4_7</code>.</p>
+<p>This is helpful during schematic review and debugging, and you’re 
+more likely to catch errors such as a swapped TX/RX or SDA/SCL if the 
+nets are labelled properly.</p>
+<h2 id="power-up-ground-down-signals-flow-across">5. Power up, ground down, signals flow across</h2>
+<p>Your power ports should face upwards. Your grounds should point 
+downwards. Your signals should flow across the schematic, ideally with 
+inputs on the left and outputs on the right (although if you read/write 
+in a right-to-left language then feel free to go that direction 
+instead).</p>
+<p>If you’ve got a bipolar supply, try to draw the negative rail at the bottom and positive rail at the top.</p>
+<h3 id="examples">Examples</h3>
+<h4 id="grounds-facing-upwards">Grounds facing upwards</h4>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s04.png" alt="Schematic with a 3.3V power net connected to two decoupling capacitors, drawn with grounds facing upwards." class="invert-when-dark">
+
+</figure>
+<h4 id="ground-facing-left">Ground facing left</h4>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s05.png" alt="LED routed out from a pin, to ground, but the ground is drawn sideways." class="invert-when-dark">
+
+</figure>
+<h4 id="power-port-facing-down">Power port facing down</h4>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s06.png" alt="3.3V power port pointing downwards." class="invert-when-dark">
+
+</figure>
+<h4 id="inputs-not-flowing-left-to-right">Inputs not flowing left-to-right</h4>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s07.png" alt="Inputs coming in from the right and the top, output on the left, and VCC facing sideways." class="invert-when-dark">
+
+</figure>
+<h3 id="suggested-alternative-1">Suggested alternative</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s08.png" alt="The last schematic but adjusted to have the inputs on the left, output on the right, grounds facing down and aligned to each other, and power facing up." class="invert-when-dark">
+
+</figure>
+<p>Much neater. Signals flow left to right and the ports are nicely aligned.</p>
+<h2 id="avoid-spaghetti">6. Avoid spaghetti</h2>
+<p>Don’t route wires in a big tangled mess of spaghetti. If you’ve got 
+lots of wires crossing in one area, or wires looping around through your
+ schematic, it’ll quickly become difficult to understand and follow.</p>
+<p>Use net label to avoid needing to route wires to lots of different locations across your schematic.</p>
+<p>Use buses to route parallel bus signals where appropriate.</p>
+<p>If you find yourself needing to reverse the order of pins, either 
+create an alternative symbol for your part to have a more convenient pin
+ order, or use net labels or a bus to route the signals in a tidier 
+manner.</p>
+<h3 id="example-1">Example</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s09.png" alt="Spaghetti routing of five address lines between two devices." class="invert-when-dark">
+
+</figure>
+<p>This is pretty hard to follow and a mistakenly out-of-order connection could easily be missed.</p>
+<h3 id="suggested-alternatives">Suggested alternatives</h3>
+<h4 id="better-symbol">Better symbol:</h4>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s10.png" alt="The same design, but the component on the right has had its symbol updated to put all the address lines in descending order on the left side." class="invert-when-dark">
+
+</figure>
+<p>The symbol has been redrawn to group the pins by function and order 
+them consistently, instead of simply matching the footprint pin order.</p>
+<h4 id="net-labels">Net labels:</h4>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s11.png" alt="Five address pins, ADDR10 through ADDR14, connected via net labels. No wires are actually routed between the parts." class="invert-when-dark">
+
+</figure>
+<p>These lines are actually connected to each other despite no wires going between them.</p>
+<h4 id="bus">Bus:</h4>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s12.png" alt="The five address pins routed along a bus." class="invert-when-dark">
+
+</figure>
+<p>The address lines are routed in a bus. How exactly you do this depends on your EDA software.</p>
+<p>I don’t tend to use this approach very often but that’s mostly 
+because I don’t tend to do much stuff with data/address buses. If you’re
+ doing stuff with address and data buses, this is a great approach! The 
+bus net label also works like a regular net label, so you don’t always 
+need to route the whole bus over your schematic.</p>
+<h2 id="symbols-are-logical-footprints-are-physical">7. Symbols are logical, footprints are physical</h2>
+<p>Component symbols are supposed to represent the function of the part.
+ They don’t need to be a rectangle with pins placed in the same order 
+and location as the physical device pins. The reason a lot of 
+manufacturer-supplied or distributor-supplied symbol libraries tend to 
+have all their symbols matching the footprint pin layout is because they
+ auto-generate the symbols from the footprint data.</p>
+<p>Draw your ICs with pins grouped by function, in a sensible and 
+consistent order. Place your power pins at the top, ground pins at the 
+bottom. Inputs on the left, outputs on the right.</p>
+<p>Here’s an example:</p>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s20.png" alt="Two symbols for the same part. The one on the left follows the footprint, with all pins on the left and right in the same positions and order as the physical package. Address, enables, I/O, power, and ground are all jumbled together. The symbol on the right is redrawn to have all the address lines and enables on the left side, power on the top, ground on the bottom, and the IO pins and output signals on the right. All the address and IO pins are in sequential order." class="invert-when-dark">
+
+</figure>
+<p>The symbol on the left is the default one that EasyEDA provides, 
+auto-generated from the footprint. The symbol on the right is a custom 
+one I made for the same part. What a difference!</p>
+<p>For parts that have multiple elements, e.g.&nbsp;a quad NAND gate or 
+dual opamp, consider making a multi-part symbol. This allows you to 
+independently position the elements in your schematic. If your EDA tool 
+supports part swapping, make sure to configure it to make layout easier 
+later.</p>
+<h2 id="route-out-of-pins-not-across-pins">8. Route out of pins, not across pins</h2>
+<p>Don’t connect to pins at a 90 degree angle - route straight out, then turn.</p>
+<p>Don’t connect pins directly to other pins - always add a wire between them.</p>
+<h3 id="example-2">Example</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s13.png" alt="Example schematic with an EN pin pulled up to VCC via a 10k resistor, and pulled to ground via a normally-open switch. Issues with the schematic layout are described below." class="invert-when-dark">
+
+</figure>
+<p>This example has four issues:</p>
+<ul>
+<li>Pin 1 of SW1 is directly connected to the GND port, at 90 degrees.</li>
+<li>The wire to EN connects at 90 degrees.</li>
+<li>The bottom of R17 is directly connected to the wire, instead of routing down.</li>
+<li>The top of R17 is directly connected to the VCC port. This one is 
+not quite as bad, but it’s still good practice to include a short wire 
+between them.</li>
+</ul>
+<h3 id="suggested-alternative-2">Suggested alternative</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s14.png" alt="The same schematic but with the issues corrected. The grid has also been set to a more appropriate size." class="invert-when-dark">
+
+</figure>
+<p>This looks neater, makes it easier to adjust things later (aligning 
+stuff, adding more connections, adding net labels) and makes it easier 
+to spot accidental routing mistakes such as accidentally bridging two 
+pins.</p>
+<p>Since the pullup blocks a lot of the other pins on the device, it may
+ make more sense to draw this part of the circuit away from the device 
+and use a net label to connect them.</p>
+<h2 id="label-the-purpose-of-switches-leds-and-connectors">9. Label the purpose of switches, LEDs, and connectors</h2>
+<p>What does the switch do? What does the LED indicate? What is the connector used for? Label these things.</p>
+<p>If your EDA tool supports adding extra properties to components 
+without editing the symbol in the library, this is usually the better 
+way to go. It means that the label will move with your part. Otherwise, 
+just add a separate text label.</p>
+<h2 id="give-yourself-space">10. Give yourself space</h2>
+<p>Don’t try to squash things into the smallest possible space. Give yourself space between parts. Don’t run wires through text.</p>
+<h3 id="example-3">Example</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s15.png" alt="Schematic with a lot of stuff bunched together. R4 overlaps the FB_OUT net label." class="invert-when-dark">
+
+</figure>
+<p>This one isn’t too bad, but R4’s reference designator overlaps the <code>FB_OUT</code> net label, and many of the wire junctions are very close to the pins.</p>
+<h3 id="suggested-alternative-3">Suggested alternative</h3>
+<p>I won’t bother re-drawing it, I’m sure you can figure it out :)</p>
+<p>If you find yourself running out of space, consider changing your 
+default sheet size to something larger. I usually work with A3 or A2. 
+You can also move to a multi-sheet schematic.</p>
+<h2 id="split-bigger-schematics-up-into-labelled-blocks">Split bigger schematics up into labelled blocks</h2>
+<p>If your design has a lot of things going on, it can be helpful to 
+split it up into functional blocks. For example, you might have one 
+block for power input, one block for each connector and its protection 
+circuitry, one block for an MCU, another block for each sensor.</p>
+<h3 id="example-4">Example</h3>
+<p>Here’s an environmental monitor design I worked on quite a few years 
+ago. You may need to open the image in a new tab to see it in full 
+detail.</p>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s16.png" alt="Large schematic for an old CO2 monitor circuit. There are labelled boxes for the USB-C power, VUSB to 5V buck-boost converter, 3V3 regulator, 1V8 regulator, OLED connector, SHT35 temperature &amp; humidity sensor, MH-Z19D CO2 sensor connector, SCD40 CO2 sensor, SGP30 TVOC/eCO2 sensor, fan controller, I2C logic level conversion, I2C net tie resistors, and ESP8266 connector." class="invert-when-dark">
+
+</figure>
+<p>This isn’t my best schematic work - it could do with a lot more notes
+ and some tidying up, the USB-C connector should probably be grouped 
+together with the power stuff, and I even made a mistake where SCL and 
+SDA were swapped on the SCD40 - but everything is split into building 
+blocks with a clear label to tell you the purpose of it. It’s quick and 
+easy to figure out what features and parts this thing has just from 
+those labels.</p>
+<p>You can also use hierarchical designs with multiple sheets for more complex circuits.</p>
+<h2 id="be-logical-about-where-you-place-things">11. Be logical about where you place things</h2>
+<p>If your USB connector has an ESD protection IC, draw the IC near the connector.</p>
+<p>If a decoupling capacitor is for a specific component, draw it near that component. But you don’t <em>always</em> need to directly wire the capacitor to the power pin in your schematic, as long as it’s nearby and the purpose is obvious.</p>
+<p>For example, if you’ve got multiple power pins on a part, all at the 
+same voltage and each one needs its own decoupling capacitor, it can end
+ up looking really messy if you try to draw each pin separately 
+connected to a capacitor and a power port. Instead, you can draw it like
+ this:</p>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s17.png" alt="Circuit with a device that has two VDD ports. The two ports are tied together and go to a 3V3 power port. To the left, a pair of 2.2uF capacitors in parallel are drawn between 3V3 and GND." class="invert-when-dark">
+
+</figure>
+<p>Since there are two power pins and two identical caps on the same 
+power net, right near the part in the schematic, it’s pretty obvious 
+that these are the decoupling caps for this part. You can always make a 
+note next to the capacitors if you want to make it clearer!</p>
+<h2 id="power-ports-are-for-power-signal-ports-are-for-signals">12. Power ports are for power, signal ports are for signals</h2>
+<p>Use the correct power port symbols for power nets. Don’t use signal ports for power.</p>
+<h3 id="example-5">Example</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s18.png" alt="3V3 net fed by an signal input port." class="invert-when-dark">
+
+</figure>
+<h3 id="suggested-alternative-4">Suggested alternative</h3>
+<figure>
+<img src="Creating%20high%20quality%20electronics%20schematics%20-%20Graham%20Sutherland's%20Blog_fichiers/s19.png" alt="Same circuit but 3V3 uses a proper power port." class="invert-when-dark">
+
+</figure>
+<p>It’s also worth noting that <em>ports</em> are usually used for 
+multi-sheet schematic designs. They are used to make connections between
+ sheets and sub-sheets / sheet symbols. If you’re doing a single-sheet 
+schematic, net labels are probably what you want. The exact details 
+depend on your EDA tool and its configuration.</p>
+<h2 id="make-notes">13. Make notes</h2>
+<p>If you’ve picked specific component values or specifications and 
+they’re important, make a note of how you arrived at those values and 
+why. Things like LDO or DC-DC converter feedback resistor values, 
+soft-start capacitor values, resistor values used to program settings or
+ limits on your ICs, etc. should all come with notes. If you had to do a
+ calculation to arrive at those values, write the calculation down in 
+your schematic!</p>
+<p>The same goes for things like I2C addresses, especially if the device
+ has an address that’s configurable via address pin strapping.</p>
+<p>If you used a vendor’s tool to come up with a particular set of 
+component values and a particular config, include the details. If you 
+used a vendor’s spreadsheet tool, make a note of where you saved the 
+copy with the values entered. If you used a web tool, include a link if 
+you can, or the parameters you entered. If it’s a desktop tool, save the
+ project file or make screenshots and mention this in your schematic.</p>
+<p>Write down the specifications and limits of your designs, such as how
+ much current each power rail can supply, and how much power the key 
+parts will dissipate at those limits.</p>
+<p>If you’ve done simulations, make a note of the results and any file names in your schematic.</p>
+<p>If there are specific layout requirements, make notes about them. 
+This is often important for things like DC-DC converter switching nodes,
+ sensitive analogue parts, and decoupling on more demanding components.</p>
+<p>Lots of notes. You’ll thank yourself later.</p>
+<h2 id="decide-on-a-net-naming-convention-and-stick-to-it">14. Decide on a net naming convention and stick to it</h2>
+<p>Keep your net names consistent in terms of casing and format.</p>
+<p>For example, you might name a 3.3V power net as any of these:</p>
+<ul>
+<li><code>3V3</code></li>
+<li><code>+3V3</code></li>
+<li><code>3v3</code></li>
+<li><code>+3v3</code></li>
+<li><code>3.3V</code></li>
+<li><code>+3.3V</code></li>
+</ul>
+<p>I personally prefer using one of the first two, mostly because I like
+ uppercase net names. The reason for using “V” as a decimal separator 
+instead of a period is twofold: some EDA tools don’t like periods in net
+ names, and (depending on the font) the period might be easy to misread,
+ e.g.&nbsp;mistaking “1.5V” for “15V”.</p>
+<p>I also find the first two easier to read if you end up needing to 
+prefix two different supplies of the same voltage. For example, if I 
+have two separate 3.3V rails for an MCU and an ADC IC, I would name 
+those nets <code>MCU_3V3</code> and <code>ADC_3V3</code> respectively.</p>
+<p>Whichever you choose, make it clear and be consistent about it across your design. Don’t have one net called <code>EN</code> and another called <code>Enable</code>.</p>
+
+</main></article><footer>
+<hr>
+<p><small>this blog is published under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license. you can contact me at <a rel="me" href="https://chaos.social/@gsuberland">@gsuberland@chaos.social</a> or <a href="https://poly.nomial.co.uk/">visit my website</a></small></p>
+<p><small>an <a href="https://blog.poly.nomial.co.uk/feed.xml">RSS feed</a> is available if you wish to be notified about new posts.</small></p>
+</footer>
+
+</body></html>
