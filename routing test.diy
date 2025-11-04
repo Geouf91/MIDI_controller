@@ -17,11 +17,11 @@
       <alpha>63</alpha>
       <value></value>
       <controlPoints>
-        <point x="2.8" y="1.0"/>
-        <point x="7.9" y="4.3"/>
+        <point x="2.7" y="1.0"/>
+        <point x="7.8" y="4.3"/>
       </controlPoints>
-      <firstPoint x="2.8" y="1.0"/>
-      <secondPoint x="7.9" y="4.3"/>
+      <firstPoint x="2.7" y="1.0"/>
+      <secondPoint x="7.8" y="4.3"/>
       <boardColor hex="f8ebb3"/>
       <borderColor hex="ada47d"/>
       <coordinateColor hex="b6b6b6"/>
@@ -699,7 +699,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB2</name>
@@ -709,7 +709,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB3</name>
@@ -719,7 +719,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB5</name>
@@ -729,7 +729,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB6</name>
@@ -739,7 +739,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB7</name>
@@ -749,7 +749,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB8</name>
@@ -759,7 +759,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB9</name>
@@ -769,7 +769,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB10</name>
@@ -779,7 +779,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB11</name>
@@ -789,7 +789,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB12</name>
@@ -799,7 +799,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB13</name>
@@ -809,7 +809,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB14</name>
@@ -819,7 +819,7 @@
       <color hex="000000"/>
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_270</orientation>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB15</name>
@@ -2318,6 +2318,40 @@
       <thickness value="1.0" unit="mm"/>
       <layer>_1</layer>
     </diylc.connectivity.CopperTrace>
+    <diylc.connectivity.CurvedTrace>
+      <name>Trace20</name>
+      <alpha>127</alpha>
+      <controlPoints2>
+        <point x="5.3" y="2.7"/>
+        <point x="5.6" y="2.6"/>
+        <point x="5.8" y="2.6"/>
+        <point x="6.1" y="2.7"/>
+      </controlPoints2>
+      <color hex="000000"/>
+      <pointCount>FOUR</pointCount>
+      <style>SOLID</style>
+      <smooth>true</smooth>
+      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
+      <size value="1.0" unit="mm"/>
+      <layer>_1</layer>
+    </diylc.connectivity.CurvedTrace>
+    <diylc.connectivity.CurvedTrace>
+      <name>Trace23</name>
+      <alpha>127</alpha>
+      <controlPoints2>
+        <point x="3.9" y="2.7"/>
+        <point x="4.1" y="2.4"/>
+        <point x="5.9" y="2.4"/>
+        <point x="6.2" y="2.7"/>
+      </controlPoints2>
+      <color hex="000000"/>
+      <pointCount>FOUR</pointCount>
+      <style>SOLID</style>
+      <smooth>true</smooth>
+      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
+      <size value="1.0" unit="mm"/>
+      <layer>_1</layer>
+    </diylc.connectivity.CurvedTrace>
     <diylc.passive.CrystalOscillator>
       <name>X1</name>
       <alpha>127</alpha>
@@ -2480,6 +2514,46 @@
       <horizontalAlignment>CENTER</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
       <orientation>DEFAULT</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB53</name>
+      <point x="5.3" y="2.8"/>
+      <text>INT2</text>
+      <font reference="../../diylc.misc.Label[38]/font"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>_270</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB71</name>
+      <point x="3.8" y="2.8"/>
+      <text>INT1</text>
+      <font reference="../../diylc.misc.Label[38]/font"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>_270</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB72</name>
+      <point x="6.1" y="2.8"/>
+      <text>INT2</text>
+      <font reference="../../diylc.misc.Label[38]/font"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>_90</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB73</name>
+      <point x="6.2" y="2.8"/>
+      <text>INT1</text>
+      <font reference="../../diylc.misc.Label[38]/font"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>_90</orientation>
     </diylc.misc.Label>
   </components>
   <groups/>

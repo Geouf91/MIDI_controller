@@ -76,6 +76,7 @@ struct CCMCPEncoder : GenericMIDIRotaryEncoder<MCPEncoderType::MCP23017Encoder,
 };
 
 USBDebugMIDI_Interface midi;
+// ## use this instead for MIDI connector: HardwareSerialMIDI_Interface midi = Serial; ##
 
 // Create an object that manages the 8 encoders connected to the MCP23017.
 MCPEncoderType enc {Wire, 0x0, 12};
@@ -88,6 +89,7 @@ CCMCPEncoder ccencoders[] {
   {
     enc[0],       // The encoder to use
     MCU::V_POT_1, // The MIDI address
+    // ## use this instead for MIDI connector: {16, CHANNEL_1} ##
     1,            // Encoder speed multiplier
     4,            // Number of pulses per physical "click" of the encoder
   },
